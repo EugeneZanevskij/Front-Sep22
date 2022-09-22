@@ -1,0 +1,72 @@
+/* Styling the Body element i.e. Image,
+        Font, Alignment */
+
+body {
+    background: url(wp4641111.jpg) round;
+    width: 90%;
+    margin: 0 auto;
+    font-family: Tahoma;
+    color: indigo;
+    text-align: center;
+}
+
+/* #title {
+    font-size: 2.5rem;
+    margin: 1em;
+} */
+
+/* Styling description */
+#description {
+    font-size: 1.2em;
+    font-style: italic;
+    margin: 0 4em;
+}
+
+/* Styling the Form (Color, Padding, Shadow) */
+#survey-form {
+    width: 60vw;
+    max-width: 720px;
+    /* min-width: 540px; */
+    margin: auto;
+    padding: 0 2em 1em;
+    background-color: rgba(157, 106, 183, 0.5);
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+div {
+    text-align: left;
+    margin: 0 auto;
+    padding: 0.25rem;
+}
+
+/* Styling div input,
+        select, textarea */
+div input,
+div select,
+div textarea {
+    border: 2px solid #777;
+    border-radius: 2px;
+    padding: 5px;
+    display: block;
+    width: 95%;
+}
+
+div input[type="radio"],
+div input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+}
+
+button {
+    background-color:  rgb(196, 57, 78);
+    border: 2px solid rgb(196, 57, 152);
+    border-radius: 5px;
+    font-size: 25px;
+    padding: 5px;
+    display: block;
+    margin: auto;
+}

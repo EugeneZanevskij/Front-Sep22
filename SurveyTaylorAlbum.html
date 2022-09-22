@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taylor Swift Albums</title>
+    <link rel="stylesheet" href="SurveyTaylorAlbum.css" />
+  </head>
+  <body>
+    <!-- h1 element with an id of title -->
+    <h1 id="title">What's the best Taylor Swift album?</h1>
+    <!--a short explanation in a p element with an id of description-->
+    <p id="description">
+      This is a form to collect people's opinions on what's the best Taylor Swift's album
+      </p>
+    <!--form element with an id of survey-form-->
+    <form id="survey-form">
+      <div>
+        <label id="name-label" for="name" class="text-question">Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+      </div>
+      <div>
+        <label id="email-label" for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+      </div>
+      <div>
+        <label id="number-label" for="number">Age (optional)</label>
+        <input type="number" id="number" min="5" max="120" placeholder="Age">
+      </div>
+      <div>
+      <label>Are you a fan of Taylor Swift?</label>
+        <label for="swiftie"><input type="radio" id="swiftie" name="fan" value="swiftie"> Swiftie</label>
+        <label for="sometimes"><input type="radio" id="sometimes" name="fan" value="sometimes"> Sometimes listen</label>
+        <label for="notFan"><input type="radio" id="notFan" name="fan" value="notFan"> Not a Fan</label>
+      </div>
+      <div>
+        <label for="dropdown">What do you love most about her music?</label>
+        <select name="dropdown" id="dropdown"  multiple required>
+          <option value="story">Storytelling</option>
+          <option value="vibe">Vibe</option>
+          <option value="popularity">Popularity</option>
+        </select>
+      </div>
+      <div>
+        <label>What's Best Album?</label>
+          <label><input type="checkbox" name="album" value="redTV">Red TV</label>
+          <label><input type="checkbox" name="album"  value="evermore">Evermore</label>
+          <label><input type="checkbox" name="album"  value="folklore">Folklore</label>
+          <label><input type="checkbox" name="album"  value="lover">Lover</label>
+      </div>
+      <div>
+      <label for="thoughts">Write your thoughts</label>
+        <textarea id="thoughts" name="thoughts" placeholder="Your thoughts about Taylor Swift's discography..."></textarea>
+      </div>
+      <button type="submit" id="submit"> Send </button>
+    </form>
+  </body>
+</html>
